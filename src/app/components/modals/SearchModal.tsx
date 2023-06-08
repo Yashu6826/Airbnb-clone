@@ -119,7 +119,7 @@ const SearchModal = () =>{
             setLocation(value as CountrySelectValue)}
             />
             <hr/>
-            <Map center = {location?.latlg} />
+            <Map center = {location?.latlng} />
         </div>
     )
     if(step === STEPS.DATE){
