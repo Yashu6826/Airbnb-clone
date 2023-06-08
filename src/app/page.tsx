@@ -1,3 +1,5 @@
+export const dynamic = 'auto'
+export const revalidate = false
 import Container from "@/app/components/Container";
 import ListingCard from "@/app/components/listings/ListingCard";
 import EmptyState from "@/app/components/EmptyState";
@@ -23,6 +25,7 @@ const Home = async ({searchParams}: HomeProps) => {
       </ClientOnly>
     )
   }
+  
   return (
     <ClientOnly>
       <Container>
